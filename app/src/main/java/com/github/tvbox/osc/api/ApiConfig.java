@@ -121,7 +121,7 @@ public class ApiConfig {
                             callback.success();
                         } catch (Throwable th) {
                             th.printStackTrace();
-                            callback.error("解析配置失败");
+                            callback.error("会员链接读取失败");
                         }
                     }
 
@@ -137,7 +137,7 @@ public class ApiConfig {
                                 th.printStackTrace();
                             }
                         }
-                        callback.error("拉取配置失败\n" + (response.getException() != null ? response.getException().getMessage() : ""));
+                        callback.error("会员链接读取失败\n" + (response.getException() != null ? response.getException().getMessage() : ""));
                     }
 
                     public String convertResponse(okhttp3.Response response) throws Throwable {
