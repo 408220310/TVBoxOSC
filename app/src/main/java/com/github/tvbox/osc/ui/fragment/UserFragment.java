@@ -53,7 +53,7 @@ public class UserFragment extends BaseLazyFragment implements View.OnClickListen
     private LinearLayout tvSetting;
     private LinearLayout tvHistory;
     private LinearLayout tvCollect;
-    //private LinearLayout tvPush;
+    private LinearLayout tvPush;
     private HomeHotVodAdapter homeHotVodAdapter;
     private List<Movie.Video> homeSourceRec;
 
@@ -103,7 +103,7 @@ public class UserFragment extends BaseLazyFragment implements View.OnClickListen
         tvSetting = findViewById(R.id.tvSetting);
         tvCollect = findViewById(R.id.tvFavorite);
         tvHistory = findViewById(R.id.tvHistory);
-        //tvPush = findViewById(R.id.tvPush);
+        tvPush = findViewById(R.id.tvPush);
         tvLive.setOnClickListener(this);
         tvSearch.setOnClickListener(this);
         tvSetting.setOnClickListener(this);
