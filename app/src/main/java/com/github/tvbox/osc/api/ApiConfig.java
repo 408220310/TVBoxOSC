@@ -121,7 +121,7 @@ public class ApiConfig {
                             callback.success();
                         } catch (Throwable th) {
                             th.printStackTrace();
-                            callback.error("会员链接读取失败");
+                            callback.error("会员链接已过期，请联系客服续费");
                         }
                     }
 
